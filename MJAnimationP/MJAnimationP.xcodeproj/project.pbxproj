@@ -15,6 +15,8 @@
 		043C03081FB3FC2B00BA2E02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C03071FB3FC2B00BA2E02 /* main.m */; };
 		043C03121FB3FC2C00BA2E02 /* MJAnimationPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C03111FB3FC2C00BA2E02 /* MJAnimationPTests.m */; };
 		043C031D1FB3FC2C00BA2E02 /* MJAnimationPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C031C1FB3FC2C00BA2E02 /* MJAnimationPUITests.m */; };
+		043C032C1FB3FD2100BA2E02 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C032B1FB3FD2100BA2E02 /* FirstViewController.m */; };
+		043C032F1FB3FD9700BA2E02 /* MJAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C032E1FB3FD9700BA2E02 /* MJAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		043C03181FB3FC2C00BA2E02 /* MJAnimationPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MJAnimationPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		043C031C1FB3FC2C00BA2E02 /* MJAnimationPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJAnimationPUITests.m; sourceTree = "<group>"; };
 		043C031E1FB3FC2C00BA2E02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043C032A1FB3FD2100BA2E02 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		043C032B1FB3FD2100BA2E02 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		043C032D1FB3FD9700BA2E02 /* MJAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJAnimation.h; sourceTree = "<group>"; };
+		043C032E1FB3FD9700BA2E02 /* MJAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,10 @@
 				043C03031FB3FC2B00BA2E02 /* LaunchScreen.storyboard */,
 				043C03061FB3FC2B00BA2E02 /* Info.plist */,
 				043C03071FB3FC2B00BA2E02 /* main.m */,
+				043C032A1FB3FD2100BA2E02 /* FirstViewController.h */,
+				043C032B1FB3FD2100BA2E02 /* FirstViewController.m */,
+				043C032D1FB3FD9700BA2E02 /* MJAnimation.h */,
+				043C032E1FB3FD9700BA2E02 /* MJAnimation.m */,
 			);
 			path = MJAnimationP;
 			sourceTree = "<group>";
@@ -268,6 +278,8 @@
 				043C02FD1FB3FC2B00BA2E02 /* ViewController.m in Sources */,
 				043C03081FB3FC2B00BA2E02 /* main.m in Sources */,
 				043C02FA1FB3FC2B00BA2E02 /* AppDelegate.m in Sources */,
+				043C032C1FB3FD2100BA2E02 /* FirstViewController.m in Sources */,
+				043C032F1FB3FD9700BA2E02 /* MJAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
