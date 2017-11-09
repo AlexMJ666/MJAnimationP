@@ -44,9 +44,9 @@
     if (!self.animations) {
         self.animations = [MJAnimation new];
     }
-    self.animations.type =  AnimationTypeValue1;
+    self.animations.circleCenterRect = CGRectMake(0, 0, 10, 10);
+    self.animations.type = AnimationTypeValue1;
     self.animations.isPush = YES;
-    self.animations.circleCenterRect = CGRectMake(0, 0, 1, 1);
     return self.animations;
 }
 
@@ -54,9 +54,9 @@
     if(!self.animations){
         self.animations = [[MJAnimation alloc] init];
     }
-    self.animations.type =  AnimationTypeValue1;
+    self.animations.type = AnimationTypeValue1;
     self.animations.isPush = NO;
-    self.animations.circleCenterRect = CGRectMake(0, 0, 1, 1);
+    self.animations.circleCenterRect = CGRectMake(0, 0, 10, 10);
     return self.animations;
 }
 

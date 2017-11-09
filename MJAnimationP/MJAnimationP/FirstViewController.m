@@ -16,13 +16,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self initUI];
+}
+-(void)initUI{
+    self.view.backgroundColor = [UIColor grayColor ];
+    UIButton* backVC = [UIButton buttonWithType:UIButtonTypeCustom];
+    backVC.frame = CGRectMake(129, 250, 100, 44);
+    backVC.layer.borderWidth = 1;
+    [backVC setTitle:@"nextVC" forState:UIControlStateNormal];
+    [backVC setTitleColor:[UIColor blackColor]   forState:UIControlStateNormal];
+    [backVC addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:backVC];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)back{
+    [self dismissViewControllerAnimated:YES completion:^{}];
 }
+
 
 /*
 #pragma mark - Navigation
