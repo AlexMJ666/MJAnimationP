@@ -10,9 +10,11 @@
 #import "FirstViewController.h"
 #import "MJAnimation.h"
 #import "MJAnimationVertical.h"
-@interface ViewController ()<UIViewControllerTransitioningDelegate>
+#import "MJAnimationRect.h"
+@interface ViewController ()<UIViewControllerTransitioningDelegate,UICollisionBehaviorDelegate>
 @property(nonatomic,strong) MJAnimation* animations;
 @property(nonatomic,strong) MJAnimationVertical * animationVertical;
+@property(nonatomic,strong) MJAnimationRect * animationRect;
 @end
 
 @implementation ViewController
@@ -53,13 +55,19 @@
 //    return self.animations;
 
 //动画2
-    if (!self.animationVertical) {
-        self.animationVertical = [MJAnimationVertical new];
+//    if (!self.animationVertical) {
+//        self.animationVertical = [MJAnimationVertical new];
+//    }
+//    return self.animationVertical;
+
+    if (!self.animationRect) {
+        self.animationRect = [MJAnimationRect new];
     }
-    return self.animationVertical;
+    return self.animationRect;
 }
 
 - (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed{
+//动画1
 //    if(!self.animations){
 //        self.animations = [[MJAnimation alloc] init];
 //    }
@@ -67,10 +75,15 @@
 //    self.animations.isPush = NO;
 //    self.animations.circleCenterRect = CGRectMake(0, 0, 10, 10);
 //    return self.animations;
-    if (!self.animationVertical) {
-        self.animationVertical = [MJAnimationVertical new];
+//动画2
+//    if (!self.animationVertical) {
+//        self.animationVertical = [MJAnimationVertical new];
+//    }
+//    return self.animationVertical;
+    if (!self.animationRect) {
+        self.animationRect = [MJAnimationRect new];
     }
-    return self.animationVertical;
+    return self.animationRect;
 }
 
 - (void)didReceiveMemoryWarning {

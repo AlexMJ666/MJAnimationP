@@ -18,6 +18,7 @@
 		043C032C1FB3FD2100BA2E02 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C032B1FB3FD2100BA2E02 /* FirstViewController.m */; };
 		043C032F1FB3FD9700BA2E02 /* MJAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C032E1FB3FD9700BA2E02 /* MJAnimation.m */; };
 		043C03321FB53D8300BA2E02 /* MJAnimationVertical.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C03311FB53D8300BA2E02 /* MJAnimationVertical.m */; };
+		043C03351FB5464700BA2E02 /* MJAnimationRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C03331FB5464700BA2E02 /* MJAnimationRect.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		043C032E1FB3FD9700BA2E02 /* MJAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJAnimation.m; sourceTree = "<group>"; };
 		043C03301FB53D8300BA2E02 /* MJAnimationVertical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJAnimationVertical.h; sourceTree = "<group>"; };
 		043C03311FB53D8300BA2E02 /* MJAnimationVertical.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJAnimationVertical.m; sourceTree = "<group>"; };
+		043C03331FB5464700BA2E02 /* MJAnimationRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJAnimationRect.m; sourceTree = "<group>"; };
+		043C03341FB5464700BA2E02 /* MJAnimationRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJAnimationRect.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 		043C02F71FB3FC2B00BA2E02 /* MJAnimationP */ = {
 			isa = PBXGroup;
 			children = (
+				043C03341FB5464700BA2E02 /* MJAnimationRect.h */,
+				043C03331FB5464700BA2E02 /* MJAnimationRect.m */,
 				043C03301FB53D8300BA2E02 /* MJAnimationVertical.h */,
 				043C03311FB53D8300BA2E02 /* MJAnimationVertical.m */,
 				043C02F81FB3FC2B00BA2E02 /* AppDelegate.h */,
@@ -282,6 +287,7 @@
 			files = (
 				043C02FD1FB3FC2B00BA2E02 /* ViewController.m in Sources */,
 				043C03081FB3FC2B00BA2E02 /* main.m in Sources */,
+				043C03351FB5464700BA2E02 /* MJAnimationRect.m in Sources */,
 				043C02FA1FB3FC2B00BA2E02 /* AppDelegate.m in Sources */,
 				043C032C1FB3FD2100BA2E02 /* FirstViewController.m in Sources */,
 				043C032F1FB3FD9700BA2E02 /* MJAnimation.m in Sources */,
