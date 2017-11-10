@@ -9,8 +9,10 @@
 #import "ViewController.h"
 #import "FirstViewController.h"
 #import "MJAnimation.h"
+#import "MJAnimationVertical.h"
 @interface ViewController ()<UIViewControllerTransitioningDelegate>
 @property(nonatomic,strong) MJAnimation* animations;
+@property(nonatomic,strong) MJAnimationVertical * animationVertical;
 @end
 
 @implementation ViewController
@@ -41,23 +43,34 @@
 //返回一个管理动画过渡的对象
 -(nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
 {
-    if (!self.animations) {
-        self.animations = [MJAnimation new];
+//    动画1
+//    if (!self.animations) {
+//        self.animations = [MJAnimation new];
+//    }
+//    self.animations.circleCenterRect = CGRectMake(0, 0, 10, 10);
+//    self.animations.type = AnimationTypeValue1;
+//    self.animations.isPush = YES;
+//    return self.animations;
+
+//动画2
+    if (!self.animationVertical) {
+        self.animationVertical = [MJAnimationVertical new];
     }
-    self.animations.circleCenterRect = CGRectMake(0, 0, 10, 10);
-    self.animations.type = AnimationTypeValue1;
-    self.animations.isPush = YES;
-    return self.animations;
+    return self.animationVertical;
 }
 
 - (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed{
-    if(!self.animations){
-        self.animations = [[MJAnimation alloc] init];
+//    if(!self.animations){
+//        self.animations = [[MJAnimation alloc] init];
+//    }
+//    self.animations.type = AnimationTypeValue1;
+//    self.animations.isPush = NO;
+//    self.animations.circleCenterRect = CGRectMake(0, 0, 10, 10);
+//    return self.animations;
+    if (!self.animationVertical) {
+        self.animationVertical = [MJAnimationVertical new];
     }
-    self.animations.type = AnimationTypeValue1;
-    self.animations.isPush = NO;
-    self.animations.circleCenterRect = CGRectMake(0, 0, 10, 10);
-    return self.animations;
+    return self.animationVertical;
 }
 
 - (void)didReceiveMemoryWarning {

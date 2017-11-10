@@ -17,6 +17,7 @@
 		043C031D1FB3FC2C00BA2E02 /* MJAnimationPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C031C1FB3FC2C00BA2E02 /* MJAnimationPUITests.m */; };
 		043C032C1FB3FD2100BA2E02 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C032B1FB3FD2100BA2E02 /* FirstViewController.m */; };
 		043C032F1FB3FD9700BA2E02 /* MJAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C032E1FB3FD9700BA2E02 /* MJAnimation.m */; };
+		043C03321FB53D8300BA2E02 /* MJAnimationVertical.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C03311FB53D8300BA2E02 /* MJAnimationVertical.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		043C032B1FB3FD2100BA2E02 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		043C032D1FB3FD9700BA2E02 /* MJAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJAnimation.h; sourceTree = "<group>"; };
 		043C032E1FB3FD9700BA2E02 /* MJAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJAnimation.m; sourceTree = "<group>"; };
+		043C03301FB53D8300BA2E02 /* MJAnimationVertical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJAnimationVertical.h; sourceTree = "<group>"; };
+		043C03311FB53D8300BA2E02 /* MJAnimationVertical.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJAnimationVertical.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 		043C02F71FB3FC2B00BA2E02 /* MJAnimationP */ = {
 			isa = PBXGroup;
 			children = (
+				043C03301FB53D8300BA2E02 /* MJAnimationVertical.h */,
+				043C03311FB53D8300BA2E02 /* MJAnimationVertical.m */,
 				043C02F81FB3FC2B00BA2E02 /* AppDelegate.h */,
 				043C02F91FB3FC2B00BA2E02 /* AppDelegate.m */,
 				043C02FB1FB3FC2B00BA2E02 /* ViewController.h */,
@@ -280,6 +285,7 @@
 				043C02FA1FB3FC2B00BA2E02 /* AppDelegate.m in Sources */,
 				043C032C1FB3FD2100BA2E02 /* FirstViewController.m in Sources */,
 				043C032F1FB3FD9700BA2E02 /* MJAnimation.m in Sources */,
+				043C03321FB53D8300BA2E02 /* MJAnimationVertical.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
