@@ -98,6 +98,7 @@
     }
     [self.animator addBehavior:behaviour];
     toView.alpha = 1;
+    
     [UIView animateWithDuration:1 animations:^{
         for (UIView *aView in cutViewArray) {
             aView.alpha = 0.0;

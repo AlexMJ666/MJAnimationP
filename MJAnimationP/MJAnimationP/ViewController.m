@@ -23,8 +23,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
-    
-    
     UIButton* nextVC = [UIButton buttonWithType:UIButtonTypeCustom];
     nextVC.frame = CGRectMake(129, 250, 100, 44);
     nextVC.layer.borderWidth = 1;
@@ -32,6 +30,8 @@
     [nextVC setTitleColor:[UIColor blackColor]   forState:UIControlStateNormal];
     [nextVC addTarget:self action:@selector(next:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:nextVC];
+    
+    
 }
 
 -(void)next:(UIButton*)sender
