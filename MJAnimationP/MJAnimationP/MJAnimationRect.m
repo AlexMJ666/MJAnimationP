@@ -19,7 +19,7 @@
 //- (UIDynamicAnimator *)animator
 //{
 //    if (!_animator) {
-//        // 创建物理仿真器(ReferenceView, 参照视图, 其实就是设置仿真范围)
+//        //创建物理仿真器(ReferenceView, 参照视图, 其实就是设置仿真范围)
 //        _animator = [[UIDynamicAnimator alloc] initWithReferenceView:[self.transitionContext containerView]];
 //    }
 //    return _animator;
@@ -101,7 +101,6 @@
     [UIView animateWithDuration:1 animations:^{
         for (UIView *aView in cutViewArray) {
             aView.alpha = 0.0;
-            
         }
     } completion:^(BOOL finished) {
         for (UIView *view in cutViewArray) {
@@ -111,7 +110,6 @@
         fromVC.view.hidden = NO;
         [transitionContext completeTransition:YES];
     }];
-    
 }
 
 -(NSMutableArray *)cutView:(UIView *)view intoSlicesOfWidth:(float)width andHeight:(float)height{
